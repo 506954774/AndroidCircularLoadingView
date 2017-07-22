@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+   >
+
+    <qdong.com.mylibrary.CircularLoadingView
+        android:id="@+id/simple"
+        custom:base_color="@color/pager_bg"
+        custom:min="0"
+        custom:max="100"
+        custom:argQuantity="100"
+        custom:ratio="0.6"
+        custom:progress_color="@android:color/holo_green_light"
+        custom:progress_icon="@mipmap/ic_launcher"
+        custom:duration="1000"
+        custom:progress_stroke_width="28"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_centerInParent="true"
+
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/number"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/pager_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </qdong.com.mylibrary.CircularLoadingView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set_Value"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation"
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
