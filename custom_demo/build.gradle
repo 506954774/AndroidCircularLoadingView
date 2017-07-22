@@ -4,6 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.1"
 
+
     defaultConfig {
         applicationId "qdong.com.custom_demo"
         minSdkVersion 18
