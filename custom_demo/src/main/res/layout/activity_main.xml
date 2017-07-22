@@ -20,7 +20,7 @@
         custom:argQuantity="100"
         custom:ratio="0.6"
         custom:progress_color="@android:color/holo_green_light"
-        custom:progress_icon="@mipmap/ic_launcher"
+      
         custom:duration="1000"
         custom:progress_stroke_width="28"
         android:layout_centerInParent="true"
